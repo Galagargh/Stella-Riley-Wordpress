@@ -1,0 +1,314 @@
+# Translation of Themes - Twenty Thirteen in Hebrew
+# This file is distributed under the same license as the Themes - Twenty Thirteen package.
+msgid ""
+msgstr ""
+"PO-Revision-Date: 2015-10-01 14:12:19+0000\n"
+"MIME-Version: 1.0\n"
+"Content-Type: text/plain; charset=UTF-8\n"
+"Content-Transfer-Encoding: 8bit\n"
+"Plural-Forms: nplurals=2; plural=n != 1;\n"
+"X-Generator: GlotPress/2.4.0-alpha\n"
+"Language: he_IL\n"
+"Project-Id-Version: Themes - Twenty Thirteen\n"
+
+#. Description of the plugin/theme
+msgid "The 2013 theme for WordPress takes us back to the blog, featuring a full range of post formats, each displayed beautifully in their own unique way. Design details abound, starting with a vibrant color scheme and matching header images, beautiful typography and icons, and a flexible layout that looks great on any device, big or small."
+msgstr "תבנית ברירת המחדל לשנת 2013 מחזירה אותנו אל הבסיס של וורדפרס - אל הבלוג. התבנית מציעה מגוון רחב של פורמטים (Post Format), כאשר כל אחד מהפורמטים מוצג בדרך שונה וייחודית, אפשרות לשנות את תמונת הכותרת של האתר, ערכת צבעים תוססת ומלאת חיים, טיפוגרפיה ייחודית ואייקונים יפים. התבנית הינה תבנית מגיבה (רספונסיבית) שנראית נהדר בכל מכשיר קצה."
+
+#. Theme Name of the plugin/theme
+msgid "Twenty Thirteen"
+msgstr "Twenty Thirteen"
+
+#: taxonomy-post_format.php:23
+msgid "%s Archives"
+msgstr "ארכיוני %s"
+
+#: tag.php:21
+msgid "Tag Archives: %s"
+msgstr "ארכיון תגיות: %s"
+
+#: search.php:18
+msgid "Search Results for: %s"
+msgstr "תוצאות חיפוש: %s"
+
+#: inc/custom-header.php:59
+msgctxt "header image description"
+msgid "Star"
+msgstr "כוכב"
+
+#: inc/custom-header.php:54
+msgctxt "header image description"
+msgid "Diamond"
+msgstr "יהלום"
+
+#: inc/custom-header.php:49
+msgctxt "header image description"
+msgid "Circle"
+msgstr "עיגול"
+
+#: inc/back-compat.php:37 inc/back-compat.php:47 inc/back-compat.php:60
+msgid "Twenty Thirteen requires at least WordPress version 3.6. You are running version %s. Please upgrade and try again."
+msgstr "דרישת המינימום להפעלת התבנית Twenty Thirteen היא וורדפרס בגרסה 3.6. האתר מפעיל וורדפרס בגרסה %s. יש לשדרג את גרסת וורדפרס ולנסות שנית."
+
+#: image.php:58
+msgid "Next <span class=\"meta-nav\">&rarr;</span>"
+msgstr "הבא <span class=\"meta-nav\">&larr;</span>"
+
+#: image.php:57
+msgid "<span class=\"meta-nav\">&larr;</span> Previous"
+msgstr "<span class=\"meta-nav\">&rarr;</span> הקודם"
+
+#: image.php:45
+msgid "Full resolution"
+msgstr "רוחב מסך מלא"
+
+#: image.php:44
+msgid "Link to full-size image"
+msgstr "תמונה בגודל מלא"
+
+#: image.php:28
+msgid "<span class=\"attachment-meta\">Published on <time class=\"entry-date\" datetime=\"%1$s\">%2$s</time> in <a href=\"%3$s\" title=\"Return to %4$s\" rel=\"gallery\">%5$s</a></span>"
+msgstr "<span class=\"attachment-meta\">פורסם בתאריך <time class=\"entry-date\" datetime=\"%1$s\">%2$s</time> תחת קטגוריה <a href=\"%3$s\" title=\"Return to %4$s\" rel=\"gallery\">%5$s</a></span>"
+
+#: header.php:44
+msgid "Skip to content"
+msgstr "לדלג לתוכן"
+
+#: header.php:43
+msgid "Menu"
+msgstr "תפריט"
+
+#: functions.php:397
+msgid "Permalink to %s"
+msgstr "קישור קבוע לפוסט %s"
+
+#: functions.php:391
+msgctxt "1: post format name. 2: date"
+msgid "%1$s on %2$s"
+msgstr "%1$s בתאריך %2$s"
+
+#: functions.php:371
+msgid "View all posts by %s"
+msgstr "כל הפוסטים מאת %s&rlm;"
+
+#. Translators: used between list items, there is a space after the comma.
+#: functions.php:356 functions.php:362
+msgid ", "
+msgstr ", "
+
+#: functions.php:350
+msgid "Sticky"
+msgstr "דביק"
+
+#: functions.php:332
+msgctxt "Next post link"
+msgid "%title <span class=\"meta-nav\">&rarr;</span>"
+msgstr "%title <span class=\"meta-nav\">&larr;</span>"
+
+#: functions.php:331
+msgctxt "Previous post link"
+msgid "<span class=\"meta-nav\">&larr;</span> %title"
+msgstr "<span class=\"meta-nav\">&rarr;</span> %title"
+
+#: functions.php:328
+msgid "Post navigation"
+msgstr "ניווט בפוסטים"
+
+#: functions.php:302
+msgid "Newer posts <span class=\"meta-nav\">&rarr;</span>"
+msgstr "פוסטים חדשים יותר <span class=\"meta-nav\">&larr;</span>"
+
+#: functions.php:298
+msgid "<span class=\"meta-nav\">&larr;</span> Older posts"
+msgstr "<span class=\"meta-nav\">&rarr;</span> פוסטים ישנים יותר"
+
+#: functions.php:294
+msgid "Posts navigation"
+msgstr "ניווט בין הפוסטים"
+
+#: functions.php:271
+msgid "Appears on posts and pages in the sidebar."
+msgstr "מופיע בסרגל הצדדי בפוסטים ובעמודים."
+
+#: functions.php:269
+msgid "Secondary Widget Area"
+msgstr "אזור ווידג'טים נוסף מתחת לסרגל הצדדי"
+
+#: functions.php:261
+msgid "Appears in the footer section of the site."
+msgstr "מוצג בחלק התחתון של האתר."
+
+#: functions.php:259
+msgid "Main Widget Area"
+msgstr "אזור וידג'טים ראשי"
+
+#: functions.php:246
+msgid "Page %s"
+msgstr "עמוד %s"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Bitter, translate this to 'off'. Do not translate into your own language.
+#: functions.php:137
+msgctxt "Bitter font: on or off"
+msgid "on"
+msgstr "on"
+
+#. Translators: If there are characters in your language that are not supported
+#. by Source Sans Pro, translate this to 'off'. Do not translate into your own
+#. language.
+#: functions.php:131
+msgctxt "Source Sans Pro font: on or off"
+msgid "on"
+msgstr "on"
+
+#: functions.php:97
+msgid "Navigation Menu"
+msgstr "תפריט"
+
+#: footer.php:19
+msgid "Proudly powered by %s"
+msgstr "פועל על %s"
+
+#: content-none.php:27
+msgid "It seems we can&rsquo;t find what you&rsquo;re looking for. Perhaps searching can help."
+msgstr "נראה שלא הצלחנו למצוא את מה שחיפשת. ייתכן שביצוע חיפוש יסייע."
+
+#: content-none.php:22
+msgid "Sorry, but nothing matched your search terms. Please try again with different keywords."
+msgstr "סליחה, לא נמצאו תוצאות עבור החיפוש שלך. נסה בבקשה נוסח אחר."
+
+#: content-none.php:18
+msgid "Ready to publish your first post? <a href=\"%1$s\">Get started here</a>."
+msgstr "מוכן לפרסם את הפוסט הראשון שלך? <a href=\"%1$s\">התחל כאן</a>."
+
+#: content-none.php:12
+msgid "Nothing Found"
+msgstr "לא מצאתי כלום"
+
+#: content-gallery.php:43 content-image.php:39 content-quote.php:29
+#: content-video.php:39 content.php:56
+msgid "View all % comments"
+msgstr "הצגת כל % התגובות"
+
+#: content-gallery.php:43 content-image.php:39 content-quote.php:29
+#: content-video.php:39 content.php:56
+msgid "One comment so far"
+msgstr "תגובה אחת"
+
+#: content-gallery.php:43 content-image.php:39 content-quote.php:29
+#: content-video.php:39 content.php:56
+msgid "Leave a comment"
+msgstr "כתיבת תגובה"
+
+#: content-aside.php:27 content-aside.php:35 content-audio.php:38
+#: content-chat.php:36 content-gallery.php:46 content-image.php:42
+#: content-link.php:19 content-quote.php:32 content-status.php:26
+#: content-video.php:42 content.php:31 image.php:50 page.php:39
+msgid "Edit"
+msgstr "עריכה"
+
+#: content-aside.php:20 content-audio.php:31 content-chat.php:30
+#: content-gallery.php:31 content-image.php:30 content-link.php:31
+#: content-quote.php:20 content-status.php:20 content-video.php:30
+#: content.php:48 image.php:76 page.php:35
+msgid "Pages:"
+msgstr ":עמודים"
+
+#. translators: %s: Name of current post
+#: content-aside.php:16 content-audio.php:27 content-chat.php:26
+#: content-gallery.php:27 content-image.php:26 content-link.php:27
+#: content-quote.php:16 content-status.php:16 content-video.php:26
+#: content.php:44 functions.php:506
+msgid "Continue reading %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "להמשיך לקרוא %s <span class=\"meta-nav\">&larr;</span>"
+
+#: comments.php:52
+msgid "Comments are closed."
+msgstr "סגור לתגובות."
+
+#: comments.php:47
+msgid "Newer Comments &rarr;"
+msgstr "תגובות חדשות יותר &larr;"
+
+#: comments.php:46
+msgid "&larr; Older Comments"
+msgstr "&rarr; תגובות ישנות יותר"
+
+#: comments.php:45
+msgid "Comment navigation"
+msgstr "ניווט בתגובות"
+
+#: comments.php:25
+msgctxt "comments title"
+msgid "One thought on &ldquo;%2$s&rdquo;"
+msgid_plural "%1$s thoughts on &ldquo;%2$s&rdquo;"
+msgstr[0] "תגובה אחת בנושא &ldquo;%2$s&rdquo;"
+msgstr[1] "%1$s תגובות בנושא &ldquo;%2$s&rdquo;"
+
+#: category.php:19
+msgid "Category Archives: %s"
+msgstr "ארכיון הקטגוריה: %s"
+
+#: author.php:31
+msgid "All posts by %s"
+msgstr "כל הפוסטים של %s"
+
+#: author-bio.php:30
+msgid "View all posts by %s <span class=\"meta-nav\">&rarr;</span>"
+msgstr "להציג את כל הפוסטים מאת %s&rlm; <span class=\"meta-nav\">&larr;</span>"
+
+#: author-bio.php:26
+msgid "About %s"
+msgstr "אודות %s"
+
+#: archive.php:35
+msgid "Archives"
+msgstr "ארכיון"
+
+#: archive.php:33
+msgctxt "yearly archives date format"
+msgid "Y"
+msgstr "Y"
+
+#: archive.php:33
+msgid "Yearly Archives: %s"
+msgstr "ארכיון שנתי: %s"
+
+#: archive.php:31
+msgctxt "monthly archives date format"
+msgid "F Y"
+msgstr "F Y"
+
+#: archive.php:31
+msgid "Monthly Archives: %s"
+msgstr "ארכיון חודשי: %s"
+
+#: archive.php:29
+msgid "Daily Archives: %s"
+msgstr "ארכיון יומי: %s"
+
+#: 404.php:22
+msgid "It looks like nothing was found at this location. Maybe try a search?"
+msgstr "נראה שלא נמצא כלום במיקום הזה. אולי תנסו לחפש?"
+
+#: 404.php:21
+msgid "This is somewhat embarrassing, isn&rsquo;t it?"
+msgstr "זה קצת מביך, לא?"
+
+#: 404.php:16
+msgid "Not Found"
+msgstr "לא נמצא"
+
+#. #-#-#-#-#  twentythirteen.pot (Twenty Thirteen 2.3)  #-#-#-#-#
+#. Author URI of the plugin/theme
+#: footer.php:19
+msgid "https://wordpress.org/"
+msgstr "https://he.wordpress.org/"
+
+#. Author of the plugin/theme
+msgid "the WordPress team"
+msgstr "צוות וורדפרס"
+
+#. Theme URI of the plugin/theme
+msgid "https://wordpress.org/themes/twentythirteen/"
+msgstr "https://he.wordpress.org/themes/twentythirteen/"

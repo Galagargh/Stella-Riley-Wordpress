@@ -1,0 +1,66 @@
+.fa.fa-amazon{
+    margin-left: -10px;
+}
+
+.fa-amazon:hover{
+    color: white;
+}
+
+.btn{
+    /*include button-variant(#fff, rgba(255, 255, 255, 0), #fff); */      
+    @include button-outline-variant(#7f6954);
+    @include button-size(0.6rem, 2rem, 18px, 2, 0);
+    @include font-size(18px);
+    color: white;
+    border: 2px solid white;
+    transition: 0.2s ease;
+}
+
+.brown-btn{
+    font-style:italic;
+    @include font-size(18px);
+    
+    color: #7f6954;
+    border: 2px solid #7f6954;
+    margin-top: 1rem;
+}
+
+.comment-btn:hover{
+    
+    color: #7f6954;
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+
+.pagin-btn:hover{
+    
+    color: #7f6954;
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+
+.pagin-btn-active{
+    
+    color: #7f6954;
+    background-color: #fff;
+    border: 2px solid #fff;
+}
+
+.pagin-btn-active:hover{
+    
+    color: #fff;
+    background-color: #cbb39b;
+    border: 2px solid #cbb39b;
+}
+
+.sq-btn{
+    margin: 0 0.175rem;
+    padding: 0.125rem 0.75rem;
+    width: 3rem;
+    height: 3rem;
+
+}
+
+.subscribe-btn{
+    padding: 0.6rem 1rem;
+}

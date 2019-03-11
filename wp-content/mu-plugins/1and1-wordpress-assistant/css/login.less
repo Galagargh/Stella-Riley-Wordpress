@@ -1,0 +1,113 @@
+@import 'mixins';
+
+.assistant-card.card-login {
+    .card-content {
+        padding-bottom: 0;
+    }
+    div#login {
+        h1 {
+            display: none;
+        }
+        p {
+            margin: 0;
+        }
+        p.message, div#login_error {
+            margin-bottom: (@padding * 2);
+        }
+        div#login_error {
+            color: @errorColor;
+        }
+        p.submit {
+            text-align: left;
+            float: right;
+            margin-right: -50px;
+            padding-top: @padding;
+        }
+        p#nav {
+            text-align: left;
+            float: right;
+            padding-top: @padding;
+
+            a {
+                .button();
+                color: #999999;
+            }
+        }
+        p#backtoblog {
+            text-align: left;
+            padding-top: @padding;
+            margin-left: -50px;
+
+            a {
+                .button();
+                color: #999999;
+            }
+        }
+        p label[for=pass1] {
+            display: none;
+        }
+        .password-input-wrapper {
+            position: relative;
+
+            #pass1-text,
+            .pw-weak,
+            .show-password #pass1 {
+                display: none;
+            }
+            .show-password #pass1-text {
+                display: inline-block;
+            }
+            .form-input {
+                margin-bottom: 0;
+                display: inline-block;
+                width: calc(~"100% - 25px");
+
+                input[type=text],
+                input[type=password] {
+                    box-sizing: border-box;
+                    padding: 0 25px;
+                }
+                .short + .underline,
+                .bad + .underline {
+                    background: @errorColor;
+                }
+                .good + .underline {
+                    background: orange;
+                }
+                .strong + .underline {
+                    background: mediumseagreen;
+                }
+            }
+            .button.wp-hide-pw {
+                color: #bbbbbb;
+                display: inline-block;
+                position: relative;
+                margin-left: -25px;
+                height: 20px;
+                width: 20px;
+            }
+        }
+        #pass-strength-result,
+        #reg_passmail {
+            color: #bbbbbb;
+            font-size: 12px;
+            display: block;
+            margin-top: 5px;
+            margin-bottom: 1.2em;
+
+            &.short,
+            &.bad {
+                color: @errorColor;
+            }
+            &.good {
+                color: orange;
+            }
+            &.strong {
+                color: mediumseagreen;
+            }
+        }
+        form#registerform .form-input.user_email {
+            margin-bottom: 0;
+        }
+    }
+}

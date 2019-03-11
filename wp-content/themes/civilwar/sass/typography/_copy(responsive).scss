@@ -1,0 +1,33 @@
+@include media-breakpoint-up(xs){
+    
+    h1{
+        font-size: 4rem;
+    }
+    
+    h2{
+        font-size: 2rem;
+    }
+    
+    .blog-text{
+        p{
+        font-size: 1.25rem;
+        }
+    }
+}
+
+@include media-breakpoint-down(xs){
+    
+    h1{
+        font-size: 2rem;
+    }
+    
+    h2{
+        font-size: 1.5rem;
+    }
+    
+    .blog-text{
+        p{
+        font-size: 1rem;
+        }
+    }
+}

@@ -1,0 +1,205 @@
+.navbar{
+    
+    background-color: rgba(127, 105, 84, 0);
+    font: 400 21px Lora;
+    transition: 0.5s ease;
+    text-transform: uppercase;
+    
+    .navbar-brand{
+        font: 400 22px Lora;
+        padding-bottom: 1rem;
+        transition: 0.5s ease;
+        
+        @include media-breakpoint-down(xs){
+        padding: 0.765rem 0;
+        }
+        @include media-breakpoint-up(xs){
+        padding-top: 1.5rem;
+        }
+        @include media-breakpoint-down(sm){
+        font-size: 20px;
+        }
+        @include media-breakpoint-up(md){
+        font-size: 22px;
+        } 
+    }
+    
+    .navbar-nav{
+    
+    transition: 0.5s ease;
+    	
+    	a:hover, a:focus{
+    		transition: 0.5s ease;
+    	}
+    
+        .menu-item .active{
+            color: green;
+        }
+        
+        .nav-link{
+        
+        transition: 0.5s ease;
+        
+            @include media-breakpoint-down(sm){
+            @include font-size(19px);
+            }
+            @include media-breakpoint-up(md){
+            @include font-size(21px);
+            }
+
+        }
+    }
+    
+    .navbar-toggler{
+        padding: 0.765rem 0;
+        float: right !important;
+    }
+
+}
+
+.scrolled{
+    transition: 0.5s ease;
+}
+
+.scrolled.navbar{
+    
+    transition: 0.5s ease;
+    
+    .nav-link{
+        transition: 0.5s ease;
+        
+        @include media-breakpoint-down(xs){
+        padding: 1.5rem;
+        }
+        @include media-breakpoint-up(xs){
+        padding-top: 1rem;
+        padding-bottom: 1rem;
+        }
+    }
+    
+    .navbar-brand{
+        padding: 0.765rem 0;
+        transition: 0.5s ease;
+        
+        @include media-breakpoint-down(xs){
+        padding: 0.765rem 0;
+        font-size: 20px;
+        }
+        @include media-breakpoint-up(xs){
+        padding: 1rem 0;
+        font-size: 21px;
+        }
+    }
+    
+    .menu-item{
+        transition: 0.5s ease;
+        font-style: normal;
+    }
+}
+
+/* .main-navigation {
+	clear: both;
+	display: block;
+	float: left;
+	width: 100%;
+
+	ul {
+		display: none;
+		list-style: none;
+		margin: 0;
+		padding-left: 0;
+
+		ul {
+			box-shadow: 0 3px 3px rgba(0, 0, 0, 0.2);
+			float: left;
+			position: absolute;
+			top: 1.5em;
+			left: -999em;
+			z-index: 99999;
+
+			ul {
+				left: -999em;
+				top: 0;
+			}
+
+			li {
+				&:hover > ul,
+				&.focus > ul {
+					left: 100%;
+				}
+			}
+
+			a {
+				width: 200px;
+			}
+
+			:hover > a,
+			.focus > a {
+			}
+
+			a:hover,
+			a.focus {
+			}
+		}
+
+		li:hover > ul,
+		li.focus > ul {
+			left: auto;
+		}
+	}
+	li {
+		float: left;
+		position: relative;
+
+		&:hover > a,
+		&.focus > a {
+		}
+	}
+	a {
+		display: block;
+		text-decoration: none;
+	}
+
+	.current_page_item > a,
+	.current-menu-item > a,
+	.current_page_ancestor > a,
+	.current-menu-ancestor > a {
+	}
+}
+
+// Small menu. 
+.menu-toggle,
+.main-navigation.toggled ul {
+	display: block;
+}
+
+@media screen and (min-width: 37.5em) {
+	.menu-toggle {
+		display: none;
+	}
+	.main-navigation ul {
+		display: block;
+	}
+}
+
+.comment-navigation,
+.posts-navigation,
+.post-navigation {
+
+	.site-main & {
+		margin: 0 0 1.5em;
+		overflow: hidden;
+	}
+
+	.nav-previous {
+		float: left;
+		width: 50%;
+	}
+
+	.nav-next {
+		float: right;
+		text-align: right;
+		width: 50%;
+	}
+}
+ */

@@ -1,0 +1,57 @@
+
+// Rem font sizing with pixel fallback for browser support 
+
+@function calculateRem($size) {
+  $remSize: $size / 16px;
+  @return "$remSize * 1rem";
+}
+
+@mixin font-size($size) {
+  font-size: $size;
+  font-size: calculateRem($size);
+}
+
+// Center block
+@mixin center-block {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+// Clearfix
+@mixin clearfix() {
+	content: "";
+	display: table;
+	table-layout: fixed;
+}
+
+// Clear after (not all clearfix need this also)
+@mixin clearfix-after() {
+	clear: both;
+}
+
+/* More semantic names for breakpoints */
+
+@mixin bp-xlarge {
+  @media only screen and (max-width: 80em) {
+    @content;
+  }
+}
+
+@mixin bp-large {
+  @media only screen and (max-width: 60em) {
+    @content;
+  }
+}
+
+@mixin bp-medium {
+  @media only screen and (max-width: 40em) {
+    @content;
+  }
+}
+
+@mixin bp-small {
+  @media only screen and (max-width: 30em) {
+    @content;
+  }
+}

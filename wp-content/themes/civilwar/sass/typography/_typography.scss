@@ -1,0 +1,21 @@
+@import "webfonts";
+
+body,
+button,
+input,
+select,
+textarea {
+	color: $color__text-main;
+	font-family: $font__main;
+	font-weight: 400;
+	@include font-size(16);
+	line-height: $font__line-height-body;
+}
+
+@import "headings";
+
+@import "copy";
+
+@import "copy(responsive)";
+
+@import "effects";

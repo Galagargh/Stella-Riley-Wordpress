@@ -1,0 +1,27 @@
+// @import "../layout/content-sidebar";
+// @import "../layout/sidebar-content";
+/*--------------------------------------------------------------
+## Posts and pages
+--------------------------------------------------------------*/
+@import "primary/posts-and-pages";
+@import "primary/index";
+@import "primary/author";
+@import "primary/library";
+@import "primary/bloglatest";
+@import "primary/blogsingle";
+@import "primary/search";
+
+/*--------------------------------------------------------------
+## Asides
+--------------------------------------------------------------*/
+@import "primary/asides";
+
+/*--------------------------------------------------------------
+## Footer
+--------------------------------------------------------------*/
+@import "secondary/footer";
+
+/*--------------------------------------------------------------
+## Comments
+--------------------------------------------------------------*/
+@import "primary/comments";

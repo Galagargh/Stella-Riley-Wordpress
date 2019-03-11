@@ -1,0 +1,171 @@
+.assistant-card.card-login .card-content {
+  padding-bottom: 0;
+}
+.assistant-card.card-login div#login h1 {
+  display: none;
+}
+.assistant-card.card-login div#login p {
+  margin: 0;
+}
+.assistant-card.card-login div#login p.message,
+.assistant-card.card-login div#login div#login_error {
+  margin-bottom: 32px;
+}
+.assistant-card.card-login div#login div#login_error {
+  color: #f44336;
+}
+.assistant-card.card-login div#login p.submit {
+  text-align: left;
+  float: right;
+  margin-right: -50px;
+  padding-top: 16px;
+}
+.assistant-card.card-login div#login p#nav {
+  text-align: left;
+  float: right;
+  padding-top: 16px;
+}
+.assistant-card.card-login div#login p#nav a {
+  cursor: pointer;
+  line-height: 1.4;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  color: #176ff4;
+  background: transparent none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  margin: 0;
+  color: #999999;
+}
+.assistant-card.card-login div#login p#nav a.disabled,
+.assistant-card.card-login div#login p#nav a:disabled {
+  color: #cccccc;
+  cursor: not-allowed;
+}
+.assistant-card.card-login div#login p#nav a,
+.assistant-card.card-login div#login p#nav a:focus,
+.assistant-card.card-login div#login p#nav a:active {
+  box-shadow: none;
+  outline: 0 none;
+  border: 0 none;
+}
+.assistant-card.card-login div#login p#backtoblog {
+  text-align: left;
+  padding-top: 16px;
+  margin-left: -50px;
+}
+.assistant-card.card-login div#login p#backtoblog a {
+  cursor: pointer;
+  line-height: 1.4;
+  font-size: 16px;
+  font-family: 'Open Sans', sans-serif;
+  text-transform: uppercase;
+  color: #176ff4;
+  background: transparent none;
+  -webkit-border-radius: 2px;
+  -moz-border-radius: 2px;
+  -ms-border-radius: 2px;
+  -o-border-radius: 2px;
+  border-radius: 2px;
+  -webkit-transition: none;
+  -moz-transition: none;
+  -ms-transition: none;
+  -o-transition: none;
+  transition: none;
+  display: inline-block;
+  box-sizing: border-box;
+  padding: 8px 16px;
+  margin: 0;
+  color: #999999;
+}
+.assistant-card.card-login div#login p#backtoblog a.disabled,
+.assistant-card.card-login div#login p#backtoblog a:disabled {
+  color: #cccccc;
+  cursor: not-allowed;
+}
+.assistant-card.card-login div#login p#backtoblog a,
+.assistant-card.card-login div#login p#backtoblog a:focus,
+.assistant-card.card-login div#login p#backtoblog a:active {
+  box-shadow: none;
+  outline: 0 none;
+  border: 0 none;
+}
+.assistant-card.card-login div#login p label[for=pass1] {
+  display: none;
+}
+.assistant-card.card-login div#login .password-input-wrapper {
+  position: relative;
+}
+.assistant-card.card-login div#login .password-input-wrapper #pass1-text,
+.assistant-card.card-login div#login .password-input-wrapper .pw-weak,
+.assistant-card.card-login div#login .password-input-wrapper .show-password #pass1 {
+  display: none;
+}
+.assistant-card.card-login div#login .password-input-wrapper .show-password #pass1-text {
+  display: inline-block;
+}
+.assistant-card.card-login div#login .password-input-wrapper .form-input {
+  margin-bottom: 0;
+  display: inline-block;
+  width: calc(100% - 25px);
+}
+.assistant-card.card-login div#login .password-input-wrapper .form-input input[type=text],
+.assistant-card.card-login div#login .password-input-wrapper .form-input input[type=password] {
+  box-sizing: border-box;
+  padding: 0 25px;
+}
+.assistant-card.card-login div#login .password-input-wrapper .form-input .short + .underline,
+.assistant-card.card-login div#login .password-input-wrapper .form-input .bad + .underline {
+  background: #f44336;
+}
+.assistant-card.card-login div#login .password-input-wrapper .form-input .good + .underline {
+  background: orange;
+}
+.assistant-card.card-login div#login .password-input-wrapper .form-input .strong + .underline {
+  background: mediumseagreen;
+}
+.assistant-card.card-login div#login .password-input-wrapper .button.wp-hide-pw {
+  color: #bbbbbb;
+  display: inline-block;
+  position: relative;
+  margin-left: -25px;
+  height: 20px;
+  width: 20px;
+}
+.assistant-card.card-login div#login #pass-strength-result,
+.assistant-card.card-login div#login #reg_passmail {
+  color: #bbbbbb;
+  font-size: 12px;
+  display: block;
+  margin-top: 5px;
+  margin-bottom: 1.2em;
+}
+.assistant-card.card-login div#login #pass-strength-result.short,
+.assistant-card.card-login div#login #reg_passmail.short,
+.assistant-card.card-login div#login #pass-strength-result.bad,
+.assistant-card.card-login div#login #reg_passmail.bad {
+  color: #f44336;
+}
+.assistant-card.card-login div#login #pass-strength-result.good,
+.assistant-card.card-login div#login #reg_passmail.good {
+  color: orange;
+}
+.assistant-card.card-login div#login #pass-strength-result.strong,
+.assistant-card.card-login div#login #reg_passmail.strong {
+  color: mediumseagreen;
+}
+.assistant-card.card-login div#login form#registerform .form-input.user_email {
+  margin-bottom: 0;
+}

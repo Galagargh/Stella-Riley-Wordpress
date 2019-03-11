@@ -1,0 +1,304 @@
+{
+    "plugins": {
+        "woocommerce": {
+            "languages": "any",
+            "category": {
+                "eshop": "recommended"
+            }
+        },
+
+        "woocommerce-german-market-light": {
+            "languages": [
+                "DE"
+            ],
+            "category": {
+                "eshop": "recommended"
+            },
+            "download_link": "https://marketpress.de/mp-download/no-key-woocommerce-german-market-light/woocommerce-german-market-light/1und1/"
+        },
+
+        "tinymce-advanced": {
+            "languages": "any",
+            "category": {
+                "any": "recommended"
+            }
+        },
+
+        "statify": {
+            "languages": "any",
+            "category": {
+                "any": "recommended"
+            }
+        },
+
+        "codistoconnect": {
+            "languages": "any",
+            "category": {
+                "eshop": "eshop"
+            }
+        },
+
+        "dhl-woocommerce-shipping-method": {
+            "languages": "any",
+            "category": {
+                "eshop": "eshop"
+            }
+        },
+
+        "contact-form-7": {
+            "languages": "any",
+            "category": {
+                "gallery": "more",
+                "blog": "more",
+                "personal": "more",
+                "business": "recommended",
+                "eshop": "recommended",
+                "club": "recommended"
+            }
+        },
+
+        "google-analytics-for-wordpress": {
+            "languages": "any",
+            "category": {
+                "any": "analytics"
+            }
+        },
+
+        "nextgen-gallery": {
+            "languages": "any",
+            "category": {
+                "gallery": "recommended",
+                "blog": "more",
+                "personal": "recommended",
+                "business": "more",
+                "eshop": "more",
+                "club": "recommended"
+            }
+        },
+
+
+        "shariff": {
+            "languages": "any",
+            "category": {
+                "gallery": "more",
+                "blog": "recommended",
+                "personal": "more",
+                "business": "more",
+                "eshop": "more"
+            }
+        },
+
+        "webappick-product-feed-for-woocommerce": {
+            "languages": "any",
+            "category": {
+                "eshop": "eshop"
+            }
+        },
+
+        "wf-cookie-consent": {
+            "languages": "any",
+            "category": {
+                "any": "analytics"
+            }
+        },
+
+        "woocommerce-novalnet-gateway": {
+            "languages": "any",
+            "category": {
+                "eshop": "eshop"
+            }
+        },
+
+        "wordpress-seo": {
+            "languages": "any",
+            "category": {
+                "any": "seo"
+            }
+        },
+
+        "wp-piwik": {
+            "languages": "any",
+            "category": {
+                "any": "analytics"
+            }
+        },
+
+        "wysija-newsletters": {
+            "languages": "any",
+            "category": {
+                "any": "more"
+            }
+        },
+
+        "regenerate-thumbnails-advanced": {
+            "languages": "any",
+            "category": {
+                "gallery": "recommended",
+                "blog": "recommended",
+                "personal": "more",
+                "business": "more",
+                "eshop": "recommended",
+                "club": "recommended"
+            }
+        },
+
+        "disable-comments": {
+            "languages": "any",
+            "category": {
+                "any": "more"
+            },
+            "new":1
+        },
+
+        "breadcrumb-navxt": {
+            "languages": "any",
+            "category": {
+                "any": "seo"
+            },
+            "new":1
+        },
+
+        "tablepress": {
+            "languages": "any",
+            "category": {
+                "blog": "more",
+                "personal": "more",
+                "club": "recommended"
+            },
+            "new":1
+        },
+
+        "the-events-calendar": {
+            "languages": "any",
+            "category": {
+                "gallery": "more",
+                "blog": "more",
+                "personal": "more",
+                "business": "recommended",
+                "eshop": "more",
+                "club": "recommended"
+            },
+            "new":1
+        },
+
+        "broken-link-checker": {
+            "languages": "any",
+            "category": {
+                "any": "recommended"
+            },
+            "new":1
+        },
+
+        "wp-maintenance-mode": {
+            "languages": "any",
+            "category": {
+                "gallery": "more",
+                "blog": "more",
+                "personal": "more",
+                "business": "more",
+                "eshop": "recommended"
+            },
+            "new":1
+        },
+
+        "user-role-editor": {
+            "languages": "any",
+            "category": {
+                "any": "more"
+            },
+            "new":1
+        },
+
+        "shortcodes-ultimate": {
+            "languages": "any",
+            "category": {
+                "any": "more"
+            },
+            "new":1
+        },
+
+        "fast-velocity-minify": {
+            "languages": "any",
+            "category": {
+                "any": "more"
+            },
+            "new":1
+        },
+
+        "a3-lazy-load": {
+            "languages": "any",
+            "category": {
+                "gallery": "recommended",
+                "blog": "recommended",
+                "personal": "recommended",
+                "business": "recommended",
+                "eshop": "more"
+            },
+            "new":1
+        },
+
+        "podlove-podcasting-plugin-for-wordpress": {
+            "languages": "any",
+            "category": {
+                "gallery": "more",
+                "blog": "more",
+                "personal": "more",
+                "business": "more",
+                "eshop": "more",
+                "podcast": "recommended"
+            },
+            "new":1
+        },
+
+        "podlove-web-player": {
+            "languages": "any",
+            "category": {
+                "gallery": "more",
+                "blog": "more",
+                "personal": "more",
+                "business": "more",
+                "eshop": "more",
+                "podcast": "recommended"
+            },
+            "new":1
+        },
+
+        "podlove-subscribe-button": {
+            "languages": "any",
+            "category": {
+                "gallery": "more",
+                "blog": "more",
+                "personal": "more",
+                "business": "more",
+                "eshop": "more",
+                "podcast": "recommended"
+            },
+            "new":1
+        },
+
+        "antispam-bee": {
+            "languages": "any",
+            "category": {
+                "any": "recommended"
+            },
+            "new":1
+        },
+
+        "ultimate-member": {
+            "languages": "any",
+            "category": {
+                "club": "recommended",
+                "podcast": "recommended"
+            },
+            "new":1
+        },
+
+        "bsk-pdf-manager": {
+            "languages": "any",
+            "category": {
+                "club": "recommended"
+            },
+            "new":1
+        }
+    }
+}

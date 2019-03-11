@@ -1,0 +1,285 @@
+@import 'mixins';
+
+// WP Customizer tweaks
+.wp-customizer {
+    #TB_window, #TB_overlay {
+        z-index: 999999;
+    }
+    .card-lightbox {
+        font-family: 'Open Sans', sans-serif;
+        font-size: 16px;
+        line-height: 1.42857;
+        border-radius: 2px;
+
+        #TB_ajaxContent {
+            padding: 0;
+            border-radius: 2px;
+
+            div, :before, :after {
+                box-sizing: border-box;
+                .vendor(animation-fill-mode, ~"forwards !important");
+            }
+            p, ul, ol {
+                font-size: 16px;
+                line-height: 1.42857;
+            }
+            .btn {
+                .button();
+
+                &.btn-secondary {
+                    color: #999999;
+                }
+            }
+        }
+    }
+}
+
+// Assistant global styles
+body.assistant-page {
+    color: #ffffff;
+    background-size: 100% 100%;
+    position: relative;
+    margin: 0;
+    padding: 0;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+    font-family: 'Open Sans', sans-serif;
+    font-size: 16px;
+    line-height: 1.42857;
+
+    section {
+        padding: @padding;
+    }
+    section, div, :before, :after {
+        box-sizing: border-box;
+        .vendor(transition, 0.3s cubic-bezier(0.55, 0, 0.1, 1));
+        .vendor(animation-fill-mode, ~"forwards !important");
+    }
+
+    .page-gradient-overlay {
+        .absolute-fixed;
+        background-image: linear-gradient(45deg, rgba(201, 243, 110, 0.25) 0%, rgba(0, 0, 0, 0) 30%),
+        linear-gradient(0deg, rgba(255, 102, 0, 0.31) 0%, rgba(0, 0, 0, 0) 30%),
+        linear-gradient(-45deg, rgba(212, 105, 58, 0.34) 0%, rgba(0, 0, 0, 0) 50%),
+        linear-gradient(-45deg, rgba(0, 102, 255, 0.54) 0%, rgba(0, 0, 0, 0) 50%);
+        margin: 0;
+        padding: 0;
+        z-index: 0;
+    }
+
+    .header {
+        line-height: 34px;
+        width: 100%;
+        height: @headerHeight;
+        position: relative;
+        z-index: 1;
+
+        img {
+            vertical-align: top;
+            height: 34px;
+        }
+    }
+
+    // MUI-style Forms
+    *::-webkit-input-placeholder {
+        .placeholder-style;
+    }
+    *:-moz-placeholder {
+        .placeholder-style;
+    }
+    *::-moz-placeholder {
+        .placeholder-style;
+    }
+    *:-ms-input-placeholder {
+        .placeholder-style;
+    }
+    .form-input {
+        width: 100%;
+        max-width: 320px;
+        position: relative;
+        margin: 0 auto 1.2em auto;
+        .vendor(transition, none);
+
+        .underline {
+            height: 2px;
+            width: 100%;
+            left: 50%;
+            bottom: 0;
+            position: absolute;
+            margin-left: -50%;
+            background: @colorAccent1;
+            .vendor(transform, scaleX(0));
+        }
+        input[type=text],
+        input[type=password],
+        input[type=date],
+        input[type=datetime-local],
+        input[type=email],
+        input[type=month],
+        input[type=number],
+        input[type=search],
+        input[type=tel],
+        input[type=time],
+        input[type=url],
+        input[type=week] {
+            opacity: 1;
+            font-size: 24px;
+            font-weight: 500;
+            color: @titleColor;
+            background: transparent;
+            border: none;
+            border-bottom: 1px solid #bbbbbb;
+            text-align: center;
+            position: relative;
+            display: block;
+            width: 100%;
+            margin: 0 auto;
+
+            &:focus {
+                outline: none;
+
+                & + .underline {
+                    .vendor(transform, scaleX(1));
+                }
+            }
+            &:-webkit-autofill {
+                -webkit-text-fill-color: @titleColor;
+                -webkit-box-shadow: inset 0 0 0 9999px white;
+            }
+        }
+        &.error {
+            margin-bottom: 0;
+
+            .underline {
+                background: @errorColor;
+                .vendor(transform, scaleX(1));
+            }
+        }
+        &.error + .message {
+            color: @errorColor;
+            font-size: 12px;
+            display: block;
+            margin-top: 5px;
+            margin-bottom: 1.2em;
+
+            a {
+                color: @errorColor;
+            }
+        }
+    }
+    .checkboxes {
+        padding-top: 0.6em;
+        margin-bottom: 1.2em;
+        font-size: 18px;
+        font-weight: 300;
+        .flex();
+        .vendor(justify-content, center);
+        .vendor(user-select, none);
+
+        .item {
+            margin: 0 1.2em;
+
+            .label {
+                opacity: .8;
+                position: relative;
+                cursor: pointer;
+
+                &:before {
+                    content: '';
+                    border: 2px solid #e1e1e1;
+                    background-color: transparent;
+                    width: 20px;
+                    height: 20px;
+                    position: relative;
+                    margin-right: 8px;
+                    display: inline-block;
+                    vertical-align: middle;
+                    z-index: 4;
+                    .vendor(border-radius, 2px);
+                }
+                &:after {
+                    content: '';
+                    border: 1px solid white;
+                    border-top: none;
+                    border-right: none;
+                    left: 5px;
+                    top: 7px;
+                    width: 9px;
+                    height: 9px;
+                    position: absolute;
+                    z-index: 5;
+                    .vendor(transform, rotate(-45deg));
+                }
+            }
+            input[type="checkbox"] {
+                display: none;
+            }
+            input[type="checkbox"]:checked + .label {
+                opacity: 1;
+
+                &:before {
+                    background-color: @colorAccent1;
+                    border: none;
+                }
+            }
+        }
+    }
+
+    // MUI buttons
+    .btn,
+    button,
+    input[type=button],
+    input[type=reset],
+    input[type=submit] {
+        .button();
+
+        &.btn-secondary {
+            color: #999999;
+        }
+    }
+
+    // MUI progress elements
+    .linear-progress-container {
+        padding: 0 @padding;
+
+        .linear-progress {
+            position: relative;
+            height: 4px;
+            display: block;
+            width: 100%;
+            background-color: #dddddd;
+            background-clip: padding-box;
+            margin: 3em 0 @padding;
+            overflow: hidden;
+            .vendor(border-radius, 2px);
+
+            .indeterminate {
+                opacity: 0.8;
+                background-color: @colorAccent1;
+
+                &:before {
+                    content: '';
+                    position: absolute;
+                    background-color: inherit;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    will-change: left, right;
+                    .vendor(animation, indeterminate 2.1s cubic-bezier(0.65, 0.815, 0.735, 0.395) infinite);
+                }
+                &:after {
+                    content: '';
+                    position: absolute;
+                    background-color: inherit;
+                    top: 0;
+                    left: 0;
+                    bottom: 0;
+                    will-change: left, right;
+                    .vendor(animation, indeterminate-short 2.1s cubic-bezier(0.165, 0.84, 0.44, 1) infinite);
+                    .vendor(animation-delay, 1.15s);
+                }
+            }
+        }
+    }
+}

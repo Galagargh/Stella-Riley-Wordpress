@@ -1,0 +1,400 @@
+a:1:{s:7:"akismet";O:8:"stdClass":26:{s:4:"name";s:17:"Akismet Anti-Spam";s:4:"slug";s:7:"akismet";s:7:"version";s:5:"4.0.3";s:6:"author";s:66:"<a href="https://automattic.com/wordpress-plugins/">Automattic</a>";s:14:"author_profile";s:41:"https://profiles.wordpress.org/automattic";s:8:"requires";s:3:"4.0";s:6:"tested";s:5:"4.9.4";s:12:"requires_php";b:0;s:6:"rating";d:96;s:7:"ratings";a:5:{i:5;i:774;i:4;i:42;i:3;i:10;i:2;i:8;i:1;i:30;}s:11:"num_ratings";i:864;s:15:"support_threads";i:10;s:24:"support_threads_resolved";i:5;s:10:"downloaded";i:97038093;s:12:"last_updated";s:21:"2018-02-19 3:25pm GMT";s:5:"added";s:10:"2005-10-20";s:8:"homepage";s:20:"https://akismet.com/";s:8:"sections";a:4:{s:11:"description";s:1059:"<p>Akismet checks your comments and contact form submissions against our global database of spam to prevent your site from publishing malicious content. You can review the comment spam it catches on your blog&#8217;s &#8220;Comments&#8221; admin screen.</p>
+<p>Major features in Akismet include:</p>
+<ul>
+<li>Automatically checks all comments and filters out the ones that look like spam.</li>
+<li>Each comment has a status history, so you can easily see which comments were caught or cleared by Akismet and which were spammed or unspammed by a moderator.</li>
+<li>URLs are shown in the comment body to reveal hidden or misleading links.</li>
+<li>Moderators can see the number of approved comments for each user.</li>
+<li>A discard feature that outright blocks the worst spam, saving you disk space and speeding up your site.</li>
+</ul>
+<p>PS: You&#8217;ll need an <a href="https://akismet.com/get/" rel="nofollow">Akismet.com API key</a> to use it.  Keys are free for personal blogs; paid subscriptions are available for businesses and commercial sites.</p>
+";s:12:"installation";s:186:"<p>Upload the Akismet plugin to your blog, Activate it, then enter your <a href="https://akismet.com/get/" rel="nofollow">Akismet.com API key</a>.</p>
+<p>1, 2, 3: You&#8217;re done!</p>
+";s:9:"changelog";s:19356:"<h4>4.0.3</h4>
+<p><em>Release Date &#8211; 19 February 2018</em></p>
+<ul>
+<li>Added a scheduled task to remove entries in wp_commentmeta that no longer have corresponding comments in wp_comments.</li>
+<li>Added a new <code>akismet_batch_delete_count</code> action to the batch delete methods for people who&#8217;d like to keep track of the numbers of records being processed by those methods.</li>
+</ul>
+<h4>4.0.2</h4>
+<p><em>Release Date &#8211; 18 December 2017</em></p>
+<ul>
+<li>Fixed a bug that could cause Akismet to recheck a comment that has already been manually approved or marked as spam.</li>
+<li>Fixed a bug that could cause Akismet to claim that some comments are still waiting to be checked when no comments are waiting to be checked.</li>
+</ul>
+<h4>4.0.1</h4>
+<p><em>Release Date &#8211; 6 November 2017</em></p>
+<ul>
+<li>Fixed a bug that could prevent some users from connecting Akismet via their Jetpack connection.</li>
+<li>Ensured that any pending Akismet-related events are unscheduled if the plugin is deactivated.</li>
+<li>Allow some JavaScript to be run asynchronously to avoid affecting page render speeds.</li>
+</ul>
+<h4>4.0</h4>
+<p><em>Release Date &#8211; 19 September 2017</em></p>
+<ul>
+<li>Added REST API endpoints for configuring Akismet and retrieving stats.</li>
+<li>Increased the minimum supported WordPress version to 4.0.</li>
+<li>Added compatibility with comments submitted via the REST API.</li>
+<li>Improved the progress indicator on the &#8220;Check for Spam&#8221; button.</li>
+</ul>
+<h4>3.3.4</h4>
+<p><em>Release Date &#8211; 3 August 2017</em></p>
+<ul>
+<li>Disabled Akismet&#8217;s debug log output by default unless AKISMET_DEBUG is defined.</li>
+<li>URL previews now begin preloading when the mouse moves near them in the comments section of wp-admin.</li>
+<li>When a comment is caught by the Comment Blacklist, Akismet will always allow it to stay in the trash even if it is spam as well.</li>
+<li>Fixed a bug that was preventing an error from being shown when a site can&#8217;t reach Akismet&#8217;s servers.</li>
+</ul>
+<h4>3.3.3</h4>
+<p><em>Release Date &#8211; 13 July 2017</em></p>
+<ul>
+<li>Reduced amount of bandwidth used by the URL Preview feature.</li>
+<li>Improved the admin UI when the API key is manually pre-defined for the site.</li>
+<li>Removed a workaround for WordPress installations older than 3.3 that will improve Akismet&#8217;s compatibility with other plugins.</li>
+<li>The number of spam blocked that is displayed on the WordPress dashboard will now be more accurate and updated more frequently.</li>
+<li>Fixed a bug in the Akismet widget that could cause PHP warnings.</li>
+</ul>
+<h4>3.3.2</h4>
+<p><em>Release Date &#8211; 10 May 2017</em></p>
+<ul>
+<li>Fixed a bug causing JavaScript errors in some browsers.</li>
+</ul>
+<h4>3.3.1</h4>
+<p><em>Release Date &#8211; 2 May 2017</em></p>
+<ul>
+<li>Improve performance by only requesting the akismet_comment_nonce option when absolutely necessary.</li>
+<li>Fixed two bugs that could cause PHP warnings.</li>
+<li>Fixed a bug that was preventing the &#8220;Remove author URL&#8221; feature from working after a comment was edited using &#8220;Quick Edit.&#8221;</li>
+<li>Fixed a bug that was preventing the URL preview feature from working after a comment was edited using &#8220;Quick Edit.&#8221;</li>
+</ul>
+<h4>3.3</h4>
+<p><em>Release Date &#8211; 23 February 2017</em></p>
+<ul>
+<li>Updated the Akismet admin pages with a new clean design.</li>
+<li>Fixed bugs preventing the <code>akismet_add_comment_nonce</code> and <code>akismet_update_alert</code> wrapper functions from working properly.</li>
+<li>Fixed bug preventing the loading indicator from appearing when re-checking all comments for spam.</li>
+<li>Added a progress indicator to the &#8220;Check for Spam&#8221; button.</li>
+<li>Added a success message after manually rechecking the Pending queue for spam.</li>
+</ul>
+<h4>3.2</h4>
+<p><em>Release Date &#8211; 6 September 2016</em></p>
+<ul>
+<li>Added a WP-CLI module. You can now check comments and recheck the moderation queue from the command line.</li>
+<li>Stopped using the deprecated jQuery function <code>.live()</code>.</li>
+<li>Fixed a bug in <code>remove_comment_author_url()</code> and <code>add_comment_author_url()</code> that could generate PHP notices.</li>
+<li>Fixed a bug that could cause an infinite loop for sites with very very very large comment IDs.</li>
+<li>Fixed a bug that could cause the Akismet widget title to be blank.</li>
+</ul>
+<h4>3.1.11</h4>
+<p><em>Release Date &#8211; 12 May 2016</em></p>
+<ul>
+<li>Fixed a bug that could cause the &#8220;Check for Spam&#8221; button to skip some comments.</li>
+<li>Fixed a bug that could prevent some spam submissions from being sent to Akismet.</li>
+<li>Updated all links to use https:// when possible.</li>
+<li>Disabled Akismet debug logging unless WP_DEBUG and WP_DEBUG_LOG are both enabled.</li>
+</ul>
+<h4>3.1.10</h4>
+<p><em>Release Date &#8211; 1 April 2016</em></p>
+<ul>
+<li>Fixed a bug that could cause comments caught as spam to be placed in the Pending queue.</li>
+<li>Fixed a bug that could have resulted in comments that were caught by the core WordPress comment blacklist not to have a corresponding History entry.</li>
+<li>Fixed a bug that could have caused avoidable PHP warnings in the error log.</li>
+</ul>
+<h4>3.1.9</h4>
+<p><em>Release Date &#8211; 28 March 2016</em></p>
+<ul>
+<li>Add compatibility with Jetpack so that Jetpack can automatically configure Akismet settings when appropriate.</li>
+<li>Fixed a bug preventing some comment data from being sent to Akismet.</li>
+</ul>
+<h4>3.1.8</h4>
+<p><em>Release Date &#8211; 4 March 2016</em></p>
+<ul>
+<li>Fixed a bug preventing Akismet from being used with some plugins that rewrite admin URLs.</li>
+<li>Reduced the amount of bandwidth used on Akismet API calls</li>
+<li>Reduced the amount of space Akismet uses in the database</li>
+<li>Fixed a bug that could cause comments caught as spam to be placed in the Pending queue.</li>
+</ul>
+<h4>3.1.7</h4>
+<p><em>Release Date &#8211; 4 January 2016</em></p>
+<ul>
+<li>Added documentation for the &#8216;akismet_comment_nonce&#8217; filter.</li>
+<li>The post-install activation button is now accessible to screen readers and keyboard-only users.</li>
+<li>Fixed a bug that was preventing the &#8220;Remove author URL&#8221; feature from working in WordPress 4.4</li>
+</ul>
+<h4>3.1.6</h4>
+<p><em>Release Date &#8211; 14 December 2015</em></p>
+<ul>
+<li>Improve the notices shown after activating Akismet.</li>
+<li>Update some strings to allow for the proper plural forms in all languages.</li>
+</ul>
+<h4>3.1.5</h4>
+<p><em>Release Date &#8211; 13 October 2015</em></p>
+<ul>
+<li>Closes a potential XSS vulnerability.</li>
+</ul>
+<h4>3.1.4</h4>
+<p><em>Release Date &#8211; 24 September 2015</em></p>
+<ul>
+<li>Fixed a bug that was preventing some users from automatically connecting using Jetpack if they didn&#8217;t have a current Akismet subscription.</li>
+<li>Fixed a bug that could cause comments caught as spam to be placed in the Pending queue.</li>
+<li>Error messages and instructions have been simplified to be more understandable.</li>
+<li>Link previews are enabled for all links inside comments, not just the author&#8217;s website link.</li>
+</ul>
+<h4>3.1.3</h4>
+<p><em>Release Date &#8211; 6 July 2015</em></p>
+<ul>
+<li>Notify users when their account status changes after previously being successfully set up. This should help any users who are seeing blank Akismet settings screens.</li>
+</ul>
+<h4>3.1.2</h4>
+<p><em>Release Date &#8211; 7 June 2015</em></p>
+<ul>
+<li>Reduced the amount of space Akismet uses in the commentmeta table.</li>
+<li>Fixed a bug where some comments with quotes in the author name weren&#8217;t getting history entries</li>
+<li>Pre-emptive security improvements to ensure that the Akismet plugin can&#8217;t be used by attackers to compromise a WordPress installation.</li>
+<li>Better UI for the key entry field: allow whitespace to be included at the beginning or end of the key and strip it out automatically when the form is submitted.</li>
+<li>When deactivating the plugin, notify the Akismet API so the site can be marked as inactive.</li>
+<li>Clearer error messages.</li>
+</ul>
+<h4>3.1.1</h4>
+<p><em>Release Date &#8211; 17th March, 2015</em></p>
+<ul>
+<li>Improvements to the &#8220;Remove comment author URL&#8221; JavaScript</li>
+<li>Include the pingback pre-check from the 2.6 branch.</li>
+</ul>
+<h4>3.1</h4>
+<p><em>Release Date &#8211; 11th March, 2015</em></p>
+<ul>
+<li>Use HTTPS by default for all requests to Akismet.</li>
+<li>Fix for a situation where Akismet might strip HTML from a comment.</li>
+</ul>
+<h4>3.0.4</h4>
+<p><em>Release Date &#8211; 11th December, 2014</em></p>
+<ul>
+<li>Fix to make .htaccess compatible with Apache 2.4.</li>
+<li>Fix to allow removal of https author URLs.</li>
+<li>Fix to avoid stripping part of the author URL when removing and re-adding.</li>
+<li>Removed the &#8220;Check for Spam&#8221; button from the &#8220;Trash&#8221; and &#8220;Approved&#8221; queues, where it would have no effect.</li>
+<li>Allow automatic API key configuration when Jetpack is installed and connected to a WordPress.com account</li>
+</ul>
+<h4>3.0.3</h4>
+<p><em>Release Date &#8211; 3rd November, 2014</em></p>
+<ul>
+<li>Fix for sending the wrong data to delete_comment action that could have prevented old spam comments from being deleted.</li>
+<li>Added a filter to disable logging of Akismet debugging information.</li>
+<li>Added a filter for the maximum comment age when deleting old spam comments.</li>
+<li>Added a filter for the number per batch when deleting old spam comments.</li>
+<li>Removed the &#8220;Check for Spam&#8221; button from the Spam folder.</li>
+</ul>
+<h4>3.0.2</h4>
+<p><em>Release Date &#8211; 18th August, 2014</em></p>
+<ul>
+<li>Performance improvements.</li>
+<li>Fixed a bug that could truncate the comment data being sent to Akismet for checking.</li>
+</ul>
+<h4>3.0.1</h4>
+<p><em>Release Date &#8211; 9th July, 2014</em></p>
+<ul>
+<li>Removed dependency on PHP&#8217;s fsockopen function</li>
+<li>Fix spam/ham reports to work when reported outside of the WP dashboard, e.g., from Notifications or the WP app</li>
+<li>Remove jQuery dependency for comment form JavaScript</li>
+<li>Remove unnecessary data from some Akismet comment meta</li>
+<li>Suspended keys will now result in all comments being put in moderation, not spam.</li>
+</ul>
+<h4>3.0.0</h4>
+<p><em>Release Date &#8211; 15th April, 2014</em></p>
+<ul>
+<li>Move Akismet to Settings menu</li>
+<li>Drop Akismet Stats menu</li>
+<li>Add stats snapshot to Akismet settings</li>
+<li>Add Akismet subscription details and status to Akismet settings</li>
+<li>Add contextual help for each page</li>
+<li>Improve Akismet setup to use Jetpack to automate plugin setup</li>
+<li>Fix &#8220;Check for Spam&#8221; to use AJAX to avoid page timing out</li>
+<li>Fix Akismet settings page to be responsive</li>
+<li>Drop legacy code</li>
+<li>Tidy up CSS and Javascript</li>
+<li>Replace the old discard setting with a new &#8220;discard pervasive spam&#8221; feature.</li>
+</ul>
+<h4>2.6.0</h4>
+<p><em>Release Date &#8211; 18th March, 2014</em></p>
+<ul>
+<li>Add ajax paging to the check for spam button to handle large volumes of comments</li>
+<li>Optimize javascript and add localization support </li>
+<li>Fix bug in link to spam comments from right now dashboard widget</li>
+<li>Fix bug with deleting old comments to avoid timeouts dealing with large volumes of comments</li>
+<li>Include X-Pingback-Forwarded-For header in outbound WordPress pingback verifications</li>
+<li>Add pre-check for pingbacks, to stop spam before an outbound verification request is made</li>
+</ul>
+<h4>2.5.9</h4>
+<p><em>Release Date &#8211; 1st August, 2013</em></p>
+<ul>
+<li>Update &#8216;Already have a key&#8217; link to redirect page rather than depend on javascript</li>
+<li>Fix some non-translatable strings to be translatable</li>
+<li>Update Activation banner in plugins page to redirect user to Akismet config page</li>
+</ul>
+<h4>2.5.8</h4>
+<p><em>Release Date &#8211; 20th January, 2013</em></p>
+<ul>
+<li>Simplify the activation process for new users</li>
+<li>Remove the reporter_ip parameter</li>
+<li>Minor preventative security improvements</li>
+</ul>
+<h4>2.5.7</h4>
+<p><em>Release Date &#8211; 13th December, 2012</em></p>
+<ul>
+<li>FireFox Stats iframe preview bug</li>
+<li>Fix mshots preview when using https</li>
+<li>Add .htaccess to block direct access to files</li>
+<li>Prevent some PHP notices</li>
+<li>Fix Check For Spam return location when referrer is empty</li>
+<li>Fix Settings links for network admins</li>
+<li>Fix prepare() warnings in WP 3.5</li>
+</ul>
+<h4>2.5.6</h4>
+<p><em>Release Date &#8211; 26th April, 2012</em></p>
+<ul>
+<li>Prevent retry scheduling problems on sites where wp_cron is misbehaving</li>
+<li>Preload mshot previews</li>
+<li>Modernize the widget code</li>
+<li>Fix a bug where comments were not held for moderation during an error condition</li>
+<li>Improve the UX and display when comments are temporarily held due to an error</li>
+<li>Make the Check For Spam button force a retry when comments are held due to an error</li>
+<li>Handle errors caused by an invalid key</li>
+<li>Don&#8217;t retry comments that are too old</li>
+<li>Improve error messages when verifying an API key</li>
+</ul>
+<h4>2.5.5</h4>
+<p><em>Release Date &#8211; 11th January, 2012</em></p>
+<ul>
+<li>Add nonce check for comment author URL remove action</li>
+<li>Fix the settings link</li>
+</ul>
+<h4>2.5.4</h4>
+<p><em>Release Date &#8211; 5th January, 2012</em></p>
+<ul>
+<li>Limit Akismet CSS and Javascript loading in wp-admin to just the pages that need it</li>
+<li>Added author URL quick removal functionality</li>
+<li>Added mShot preview on Author URL hover</li>
+<li>Added empty index.php to prevent directory listing</li>
+<li>Move wp-admin menu items under Jetpack, if it is installed</li>
+<li>Purge old Akismet comment meta data, default of 15 days</li>
+</ul>
+<h4>2.5.3</h4>
+<p><em>Release Date &#8211; 8th Febuary, 2011</em></p>
+<ul>
+<li>Specify the license is GPL v2 or later</li>
+<li>Fix a bug that could result in orphaned commentmeta entries</li>
+<li>Include hotfix for WordPress 3.0.5 filter issue</li>
+</ul>
+<h4>2.5.2</h4>
+<p><em>Release Date &#8211; 14th January, 2011</em></p>
+<ul>
+<li>Properly format the comment count for author counts</li>
+<li>Look for super admins on multisite installs when looking up user roles</li>
+<li>Increase the HTTP request timeout</li>
+<li>Removed padding for author approved count</li>
+<li>Fix typo in function name</li>
+<li>Set Akismet stats iframe height to fixed 2500px.  Better to have one tall scroll bar than two side by side.</li>
+</ul>
+<h4>2.5.1</h4>
+<p><em>Release Date &#8211; 17th December, 2010</em></p>
+<ul>
+<li>Fix a bug that caused the &#8220;Auto delete&#8221; option to fail to discard comments correctly</li>
+<li>Remove the comment nonce form field from the &#8216;Akismet Configuration&#8217; page in favor of using a filter, akismet_comment_nonce</li>
+<li>Fixed padding bug in &#8220;author&#8221; column of posts screen</li>
+<li>Added margin-top to &#8220;cleared by &#8230;&#8221; badges on dashboard</li>
+<li>Fix possible error when calling akismet_cron_recheck()</li>
+<li>Fix more PHP warnings</li>
+<li>Clean up XHTML warnings for comment nonce</li>
+<li>Fix for possible condition where scheduled comment re-checks could get stuck</li>
+<li>Clean up the comment meta details after deleting a comment</li>
+<li>Only show the status badge if the comment status has been changed by someone/something other than Akismet</li>
+<li>Show a &#8216;History&#8217; link in the row-actions</li>
+<li>Translation fixes</li>
+<li>Reduced font-size on author name</li>
+<li>Moved &#8220;flagged by&#8230;&#8221; notification to top right corner of comment container and removed heavy styling</li>
+<li>Hid &#8220;flagged by&#8230;&#8221; notification while on dashboard</li>
+</ul>
+<h4>2.5.0</h4>
+<p><em>Release Date &#8211; 7th December, 2010</em></p>
+<ul>
+<li>Track comment actions under &#8216;Akismet Status&#8217; on the edit comment screen</li>
+<li>Fix a few remaining deprecated function calls ( props Mike Glendinning ) </li>
+<li>Use HTTPS for the stats IFRAME when wp-admin is using HTTPS</li>
+<li>Use the WordPress HTTP class if available</li>
+<li>Move the admin UI code to a separate file, only loaded when needed</li>
+<li>Add cron retry feature, to replace the old connectivity check</li>
+<li>Display Akismet status badge beside each comment</li>
+<li>Record history for each comment, and display it on the edit page</li>
+<li>Record the complete comment as originally submitted in comment_meta, to use when reporting spam and ham</li>
+<li>Highlight links in comment content</li>
+<li>New option, &#8220;Show the number of comments you&#8217;ve approved beside each comment author.&#8221;</li>
+<li>New option, &#8220;Use a nonce on the comment form.&#8221;</li>
+</ul>
+<h4>2.4.0</h4>
+<p><em>Release Date &#8211; 23rd August, 2010</em></p>
+<ul>
+<li>Spell out that the license is GPLv2</li>
+<li>Fix PHP warnings</li>
+<li>Fix WordPress deprecated function calls</li>
+<li>Fire the delete_comment action when deleting comments</li>
+<li>Move code specific for older WP versions to legacy.php</li>
+<li>General code clean up</li>
+</ul>
+<h4>2.3.0</h4>
+<p><em>Release Date &#8211; 5th June, 2010</em></p>
+<ul>
+<li>Fix &#8220;Are you sure&#8221; nonce message on config screen in WPMU</li>
+<li>Fix XHTML compliance issue in sidebar widget</li>
+<li>Change author link; remove some old references to WordPress.com accounts</li>
+<li>Localize the widget title (core ticket #13879)</li>
+</ul>
+<h4>2.2.9</h4>
+<p><em>Release Date &#8211; 2nd June, 2010</em></p>
+<ul>
+<li>Eliminate a potential conflict with some plugins that may cause spurious reports</li>
+</ul>
+<h4>2.2.8</h4>
+<p><em>Release Date &#8211; 27th May, 2010</em></p>
+<ul>
+<li>Fix bug in initial comment check for ipv6 addresses</li>
+<li>Report comments as ham when they are moved from spam to moderation</li>
+<li>Report comments as ham when clicking undo after spam</li>
+<li>Use transition_comment_status action when available instead of older actions for spam/ham submissions</li>
+<li>Better diagnostic messages when PHP network functions are unavailable</li>
+<li>Better handling of comments by logged-in users</li>
+</ul>
+<h4>2.2.7</h4>
+<p><em>Release Date &#8211; 17th December, 2009</em></p>
+<ul>
+<li>Add a new AKISMET_VERSION constant</li>
+<li>Reduce the possibility of over-counting spam when another spam filter plugin is in use</li>
+<li>Disable the connectivity check when the API key is hard-coded for WPMU</li>
+</ul>
+<h4>2.2.6</h4>
+<p><em>Release Date &#8211; 20th July, 2009</em></p>
+<ul>
+<li>Fix a global warning introduced in 2.2.5</li>
+<li>Add changelog and additional readme.txt tags</li>
+<li>Fix an array conversion warning in some versions of PHP</li>
+<li>Support a new WPCOM_API_KEY constant for easier use with WordPress MU</li>
+</ul>
+<h4>2.2.5</h4>
+<p><em>Release Date &#8211; 13th July, 2009</em></p>
+<ul>
+<li>Include a new Server Connectivity diagnostic check, to detect problems caused by firewalls</li>
+</ul>
+<h4>2.2.4</h4>
+<p><em>Release Date &#8211; 3rd June, 2009</em></p>
+<ul>
+<li>Fixed a key problem affecting the stats feature in WordPress MU</li>
+<li>Provide additional blog information in Akismet API calls</li>
+</ul>
+";s:3:"faq";s:232:"
+<h4>Installation Instructions</h4>
+<p>
+<p>Upload the Akismet plugin to your blog, Activate it, then enter your <a href="https://akismet.com/get/" rel="nofollow">Akismet.com API key</a>.</p>
+<p>1, 2, 3: You&#8217;re done!</p>
+</p>
+
+";}s:17:"short_description";s:146:"Akismet checks your comments and contact form submissions against our global database of spam to protect you and your site from malicious content.";s:13:"download_link";s:56:"https://downloads.wordpress.org/plugin/akismet.4.0.3.zip";s:11:"screenshots";a:0:{}s:4:"tags";a:5:{s:7:"akismet";s:7:"akismet";s:9:"anti-spam";s:9:"anti-spam";s:8:"antispam";s:8:"antispam";s:8:"comments";s:8:"comments";s:4:"spam";s:4:"spam";}s:8:"versions";a:51:{s:5:"2.2.5";s:56:"https://downloads.wordpress.org/plugin/akismet.2.2.5.zip";s:5:"2.2.6";s:56:"https://downloads.wordpress.org/plugin/akismet.2.2.6.zip";s:5:"2.2.7";s:56:"https://downloads.wordpress.org/plugin/akismet.2.2.7.zip";s:5:"2.2.8";s:56:"https://downloads.wordpress.org/plugin/akismet.2.2.8.zip";s:5:"2.2.9";s:56:"https://downloads.wordpress.org/plugin/akismet.2.2.9.zip";s:5:"2.3.0";s:56:"https://downloads.wordpress.org/plugin/akismet.2.3.0.zip";s:5:"2.4.0";s:56:"https://downloads.wordpress.org/plugin/akismet.2.4.0.zip";s:5:"2.4.1";s:56:"https://downloads.wordpress.org/plugin/akismet.2.4.1.zip";s:5:"2.5.0";s:56:"https://downloads.wordpress.org/plugin/akismet.2.5.0.zip";s:5:"2.5.1";s:56:"https://downloads.wordpress.org/plugin/akismet.2.5.1.zip";s:6:"2.5.10";s:57:"https://downloads.wordpress.org/plugin/akismet.2.5.10.zip";s:5:"2.5.2";s:56:"https://downloads.wordpress.org/plugin/akismet.2.5.2.zip";s:5:"2.5.3";s:56:"https://downloads.wordpress.org/plugin/akismet.2.5.3.zip";s:5:"2.5.4";s:56:"https://downloads.wordpress.org/plugin/akismet.2.5.4.zip";s:5:"2.5.5";s:56:"https://downloads.wordpress.org/plugin/akismet.2.5.5.zip";s:5:"2.5.6";s:56:"https://downloads.wordpress.org/plugin/akismet.2.5.6.zip";s:5:"2.5.7";s:56:"https://downloads.wordpress.org/plugin/akismet.2.5.7.zip";s:5:"2.5.8";s:56:"https://downloads.wordpress.org/plugin/akismet.2.5.8.zip";s:5:"2.5.9";s:56:"https://downloads.wordpress.org/plugin/akismet.2.5.9.zip";s:5:"2.6.0";s:56:"https://downloads.wordpress.org/plugin/akismet.2.6.0.zip";s:5:"2.6.1";s:56:"https://downloads.wordpress.org/plugin/akismet.2.6.1.zip";s:5:"3.0.0";s:56:"https://downloads.wordpress.org/plugin/akismet.3.0.0.zip";s:9:"3.0.0-RC1";s:60:"https://downloads.wordpress.org/plugin/akismet.3.0.0-RC1.zip";s:5:"3.0.1";s:56:"https://downloads.wordpress.org/plugin/akismet.3.0.1.zip";s:5:"3.0.2";s:56:"https://downloads.wordpress.org/plugin/akismet.3.0.2.zip";s:5:"3.0.3";s:56:"https://downloads.wordpress.org/plugin/akismet.3.0.3.zip";s:5:"3.0.4";s:56:"https://downloads.wordpress.org/plugin/akismet.3.0.4.zip";s:5:"3.0.5";s:56:"https://downloads.wordpress.org/plugin/akismet.3.0.5.zip";s:3:"3.1";s:54:"https://downloads.wordpress.org/plugin/akismet.3.1.zip";s:5:"3.1.1";s:56:"https://downloads.wordpress.org/plugin/akismet.3.1.1.zip";s:6:"3.1.10";s:57:"https://downloads.wordpress.org/plugin/akismet.3.1.10.zip";s:6:"3.1.11";s:57:"https://downloads.wordpress.org/plugin/akismet.3.1.11.zip";s:5:"3.1.2";s:56:"https://downloads.wordpress.org/plugin/akismet.3.1.2.zip";s:5:"3.1.3";s:56:"https://downloads.wordpress.org/plugin/akismet.3.1.3.zip";s:5:"3.1.4";s:56:"https://downloads.wordpress.org/plugin/akismet.3.1.4.zip";s:5:"3.1.5";s:56:"https://downloads.wordpress.org/plugin/akismet.3.1.5.zip";s:5:"3.1.6";s:56:"https://downloads.wordpress.org/plugin/akismet.3.1.6.zip";s:5:"3.1.7";s:56:"https://downloads.wordpress.org/plugin/akismet.3.1.7.zip";s:5:"3.1.8";s:56:"https://downloads.wordpress.org/plugin/akismet.3.1.8.zip";s:5:"3.1.9";s:56:"https://downloads.wordpress.org/plugin/akismet.3.1.9.zip";s:3:"3.2";s:54:"https://downloads.wordpress.org/plugin/akismet.3.2.zip";s:3:"3.3";s:54:"https://downloads.wordpress.org/plugin/akismet.3.3.zip";s:5:"3.3.1";s:56:"https://downloads.wordpress.org/plugin/akismet.3.3.1.zip";s:5:"3.3.2";s:56:"https://downloads.wordpress.org/plugin/akismet.3.3.2.zip";s:5:"3.3.3";s:56:"https://downloads.wordpress.org/plugin/akismet.3.3.3.zip";s:5:"3.3.4";s:56:"https://downloads.wordpress.org/plugin/akismet.3.3.4.zip";s:3:"4.0";s:54:"https://downloads.wordpress.org/plugin/akismet.4.0.zip";s:5:"4.0.1";s:56:"https://downloads.wordpress.org/plugin/akismet.4.0.1.zip";s:5:"4.0.2";s:56:"https://downloads.wordpress.org/plugin/akismet.4.0.2.zip";s:5:"4.0.3";s:56:"https://downloads.wordpress.org/plugin/akismet.4.0.3.zip";s:5:"trunk";s:50:"https://downloads.wordpress.org/plugin/akismet.zip";}s:11:"donate_link";s:0:"";s:5:"icons";a:2:{s:2:"1x";s:59:"https://ps.w.org/akismet/assets/icon-128x128.png?rev=969272";s:2:"2x";s:59:"https://ps.w.org/akismet/assets/icon-256x256.png?rev=969272";}s:12:"contributors";a:0:{}}}

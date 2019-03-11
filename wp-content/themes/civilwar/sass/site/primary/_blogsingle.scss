@@ -1,0 +1,518 @@
+section{
+    
+    @include media-breakpoint-down(xs){
+        padding: 2rem 0;
+    }
+    
+    @include media-breakpoint-up(sm){
+        padding: 3rem 0;
+    }
+}
+
+
+/*                            */
+/*          Blog Hero         */
+/*                            */
+
+.avatar{
+    	border-radius: 50%;
+}
+
+.blog-hero{
+    
+    //background-image: url(../images/AnthonyVanDyck_Small.jpg);
+    //background-size: cover;
+    //background-position: center;
+    background: transparent;
+    padding-bottom: 0rem;
+    
+    @include media-breakpoint-down(xs){
+        padding-top: 12.5rem;
+    }
+    
+    @include media-breakpoint-up(sm){
+        padding-top: 18rem;
+    }
+    
+    @include media-breakpoint-up(md){
+        padding-top: 24.5rem;
+    }
+    
+    @include media-breakpoint-up(lg){
+        padding-top: 26.5rem;
+    }
+    
+    h2{
+        color: white;
+        -ms-word-wrap: break-word;
+		word-wrap: break-word;
+        overflow-wrap: break-word;
+        
+        @include media-breakpoint-down(xs){
+            @include font-size(32px);
+            margin-bottom: -0.4rem;
+        }
+        
+        @include media-breakpoint-up(sm){
+            @include font-size(40px);
+            margin-bottom: -0.4rem;
+        }
+        
+        @include media-breakpoint-up(md){
+            @include font-size(64px);
+            margin-bottom: -0.8rem;
+        }
+        
+        @include media-breakpoint-up(lg){
+            @include font-size(104px);
+            margin-bottom: -1rem;
+        }
+    
+    }
+}
+
+.author-bar{
+    /*height: 10rem;*/
+    padding-bottom: 10px;
+    background-color: rgba(127, 105, 84, 0.9);
+    
+    img{
+        margin-top: 10px;
+    }
+    
+    p{
+        color: white;
+        padding: 5px 0;
+        font-size: 16px;
+    }
+}
+
+/*                            */
+/*          Blog Body         */
+/*                            */
+
+.blog-body{
+    
+    padding: 3rem 0;
+    
+    img{
+        margin: 2rem 0;
+        border-style: outset;
+        border-color: #cbb39b;
+        width: 100%; 
+        
+        @include media-breakpoint-down(sm){
+        padding: 0 1rem;
+        }
+        @include media-breakpoint-up(md){
+        padding: 0 3rem;
+        }
+        
+    }
+    
+    .img-caption{
+        color: #4C3F32;
+        text-align: center;
+        font-style: italic;
+        padding-bottom: 1rem;
+        margin-bottom: 3rem;
+        border-bottom: thin solid #eceeef;
+        
+        /*    fannying around */
+        /*border-image-slice: 8 125 12 125;
+        border-image-width: 0px 80px 0px 80px;
+        border-image-outset: 0px 0px 0px 0px;
+        border-image-repeat: stretch stretch; 
+        border-image-source: url(../images/UnderlineFlourish2.svg);*/
+    }
+    
+    .blog-text{
+    	p{
+        text-align: justify;
+        padding: 0 0.765rem;
+   		}
+    }
+    
+    h1{
+        text-align: left;
+        /*padding: 0.765rem 0;*/
+        padding: 0.765rem 0rem 1rem 1rem;
+        text-transform: uppercase;
+        color: #4C3F32;
+        
+    }
+    
+    h2{
+        color: #7f6954;
+        padding: 1rem 0 2rem 1rem;
+        font-style: italic;
+        border-bottom: thin solid #eceeef;
+    }
+    
+    h2 + p{
+        
+        @include media-breakpoint-down(sm){
+            padding-top: 2rem;
+        }
+        
+        @include media-breakpoint-up(md){
+            padding-top: 3rem;
+        }
+    }
+}
+
+/*                            */
+/*       Sharing Links        */
+/*                            */
+
+.share-flag{
+    top: inherit;
+    left: 50px;
+    position: absolute;
+
+        span{
+            padding: 1rem;
+        }
+    
+        .share-icon{
+            background-color: #7f6954;
+            color: white;
+        }
+    
+        .fa-facebook{
+            padding-left: 1.2rem;
+        }
+    
+}
+
+.hide-share-flag{
+    transition: 1s linear;
+    transform: translateX(-100px);
+}
+
+//
+/*    XL big to medium    */
+//
+@media only screen and (min-width: 1265px) and (max-width: 1300px){
+    .share-flag{
+        
+        left: 1%;
+        
+        span{
+        padding: 0.5rem;    
+        }
+        
+        .fa-facebook{
+        padding-left: 0.75rem;
+        }
+    }
+}
+
+//
+/*    XL medium to small   */
+//
+@media only screen and (min-width: 1200px) and (max-width: 1265px){
+    .share-flag{
+        
+        left: -100px;
+        
+        span{
+        padding: 0.1rem;    
+        }
+        
+        .fa-facebook{
+        padding-left: 0.265rem;
+        }
+    }
+}
+
+//
+/*    MD big to medium    */
+//
+@media only screen and (min-width: 1045px) and (max-width: 1080px){
+    
+    .share-flag{
+        
+        left: 1%;
+        
+        span{
+        padding: 0.5rem;    
+        }
+        
+        .fa-facebook{
+        padding-left: 0.75rem;
+        }
+        
+    }
+}
+
+//
+/*    MD medium to small   */
+//
+@media only screen and (min-width: 992px) and (max-width: 1045px){
+    .share-flag{
+        
+        left: -100px;
+        
+        span{
+        padding: 0.1rem;    
+        }
+        
+        .fa-facebook{
+        padding-left: 0.265rem;
+        }
+    }
+}
+
+//
+/*    SM big to medium    */
+//
+@media only screen and (min-width: 840px) and (max-width: 860px){
+    
+    .share-flag{
+        
+        left: 1%;
+        
+        span{
+        padding: 0.5rem;    
+        }
+        
+        .fa-facebook{
+        padding-left: 0.75rem;
+        }
+        
+    }
+}
+
+//
+/*    SM medium to small   */
+//
+@media only screen and (min-width: 768px) and (max-width: 840px){
+    .share-flag{
+        
+        left: -100px;
+        
+        span{
+        padding: 0.1rem;    
+        }
+        
+        .fa-facebook{
+        padding-left: 0.265rem;
+        }
+    }
+}
+
+
+/*    LG to MD    */
+@media only screen and (min-width: 1216px) and (max-width: 1290px){
+    .share-flag{
+        display:none;
+    }
+
+}
+
+.fixed-share-flag{
+    top: 110px;
+    position: fixed;
+}
+
+.fixed-share-flag-bottom{
+    position: absolute;
+    
+    @include media-breakpoint-down(lg) {
+        top: 1930px;
+    }
+    @include media-breakpoint-up(xl) {
+        top: 1765px;
+    }
+}
+
+.share-section{
+    /* padding: 1rem 1rem 3rem; */
+    padding-top: 0rem;
+    margin-top: 0.5rem;
+
+    .share-icon-mobile{
+        margin-right: 30px;
+    }
+    
+    span{
+        color:#7f6954;
+    }
+    
+    .social-icons{
+        
+        a{
+            text-decoration: none;
+        }
+        
+        span{
+            color:#7f6954;
+            margin: 0.5rem 0.1rem 0;
+            transition: 0.2s ease;
+        }
+        
+        span:hover{
+            color: #cbb39b;
+        }
+        
+    }
+}
+
+/*                            */
+/*        Blog-Quote          */
+/*                            */
+
+.blog-blockquote{
+    background-image:url("images/quotebg.png");
+    background-size:cover; 
+    background-position: center;
+    box-shadow: 0 0 20px 0 rgba(1, 1, 1, 0.75) inset;
+    padding: 2rem 0;
+    
+    p{
+        @include media-breakpoint-down(xs){
+            @include font-size(24px);
+        }
+        
+        @include media-breakpoint-up(sm){
+            @include font-size(36px);
+        }
+        
+        @include media-breakpoint-up(md){
+            @include font-size(36px);
+        }
+        
+        @include media-breakpoint-up(lg){
+            @include font-size(36px);
+        }
+        
+        @include media-breakpoint-up(xl){
+            @include font-size(45px);
+        }
+    }
+    
+    .quote{
+        margin: 2rem 0;
+    }
+    
+    .quoter{
+        padding-bottom: 2rem;
+    }
+    
+    p{
+        color: white;
+    }
+}
+
+/*                            */
+/*          Comments          */
+/*                            */
+
+.fn{
+    font-style: italic;
+}
+
+.comments-section{
+    
+    height: auto;
+    background-color: #7f6954;
+    
+    @include media-breakpoint-down(xs){
+        padding: 2rem 0;
+    }
+    
+    @include media-breakpoint-up(sm){
+        padding: 3rem 0;
+    }
+    
+    a{
+    	color:white;
+    }
+    
+    h2{
+        color:white;
+        margin-left: 1.25rem;
+        text-shadow: 1px 2px 0px rgba(88, 76, 63, 0.75);
+    }
+    
+    
+    h4{
+        padding-bottom: 5px;
+    }
+    
+    .comments-icon{
+        color: white;
+        margin-right: 30px;
+    }
+    
+    .comments{
+        margin-top: 2rem;
+    }
+    
+    .comment-author{
+        font-size: 1.25rem;
+    }
+    
+    .comment-stella{
+        
+        padding-left: 1rem;
+        border-left: solid 12px #fff;
+        
+        h4{
+        font-size: 1.25rem;
+        font-weight:700;
+        }
+        
+    }
+    
+    .comment-navigation{
+        
+        margin-top: 2rem;
+        
+        font-family: 'Lora', serif;
+        font-weight: 700;
+        
+        .btn{
+            padding: 0;
+            margin: 0 0.165rem;
+        }
+    }
+}
+
+/*                            */
+/*       Comment reply        */
+/*                            */
+
+.comment-reply-section{
+
+    color: white;
+    background-color: #cbb39b;
+    
+    h2{
+        margin-left: 1.25rem;
+        text-shadow: 1px 2px 0px rgba(127, 105, 84, 0.75);
+    }
+    
+    .comments-icon{
+        margin-right: 30px;
+    }
+    
+    .input-group{
+    
+        width: 100%;
+        margin: 1.275rem 0;
+        
+        font-family: 'Lora', serif;
+        box-shadow: 1px 2px 5px 0.00px rgba(0, 0, 0, 0.3);
+        
+        .form-control{
+            color: #7f644d;
+            @include font-size(20px);
+            padding: 1.125rem 1.5rem;
+            text-align: left;
+        }
+        
+    }
+    
+}

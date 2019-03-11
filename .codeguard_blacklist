@@ -1,0 +1,10 @@
+./.*
+./*.php
+./*.txt
+./*.html
+./php.ini
+./wp-admin/*
+./wp-includes/*
+./wp-content/index.php
+./wp-content/index.html
+./wp-content/mu-plugins/*

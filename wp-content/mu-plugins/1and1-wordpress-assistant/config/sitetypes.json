@@ -1,0 +1,136 @@
+{
+    "sitetypes": {
+        "business": {
+            "headline": "business_headline",
+            "description": "business_description",
+            "themes": [
+                "argent",
+                "dispatch",
+                "colormag",
+                "responsive",
+                "hoot-ubix",
+                "donna",
+                "clean-biz",
+                "catch-base",
+                "busiprof"
+            ]
+        },
+
+        "blog": {
+            "headline": "blog_headline",
+            "description": "blog_description",
+            "themes": [
+                "gazette",
+                "lens",
+                "dispatch",
+                "responsive",
+                "colormag",
+                "hoot-ubix",
+                "donna",
+                "clean-biz",
+                "excel-blog",
+                "vt-grid-mag",
+                "catch-base",
+                "busiprof",
+                "tiny-framework",
+                "hemingway",
+                "olsen-light",
+                "exoplanet",
+                "vogue"
+            ]
+        },
+
+        "eshop": {
+            "headline": "eshop_headline",
+            "description": "eshop_description",
+            "themes": [
+                "exoplanet",
+                "business-press",
+                "azera-shop",
+                "maxstore",
+                "styled-store",
+                "ocin-lite",
+                "vogue",
+                "alpha-store",
+                "hoot-ubix"
+            ]
+        },
+
+        "gallery": {
+            "headline": "gallery_headline",
+            "description": "gallery_description",
+            "themes": [
+                "lens",
+                "cubic",
+                "boardwalk",
+                "trance",
+                "receptar",
+                "hoot-ubix",
+                "donna",
+                "vt-grid-mag",
+                "catch-base",
+                "exoplanet"
+            ]
+        },
+
+        "personal": {
+            "headline": "personal_headline",
+            "description": "personal_description",
+            "themes": [
+                "gazette",
+                "trance",
+                "dispatch",
+                "hoot-ubix",
+                "donna",
+                "clean-biz",
+                "excel-blog",
+                "vt-grid-mag",
+                "olsen-light"
+            ]
+        },
+
+        "podcast": {
+            "headline": "podcast_headline",
+            "description": "podcast_description",
+            "themes": [
+                "dispatch",
+                "hoot-ubix",
+                "donna",
+                "clean-biz",
+                "excel-blog",
+                "vt-grid-mag",
+                "olsen-light",
+                "receptar",
+                "catch-base",
+                "exoplanet",
+                "vogue",
+                "hoot-ubix",
+                "responsive",
+                "colormag",
+                "busiprof"
+            ]
+        },
+
+        "club": {
+            "headline": "club_headline",
+            "description": "club_description",
+            "themes": [
+                "dispatch",
+                "hoot-ubix",
+                "donna",
+                "clean-biz",
+                "excel-blog",
+                "vt-grid-mag",
+                "olsen-light",
+                "receptar",
+                "catch-base",
+                "exoplanet",
+                "azera-shop",
+                "responsive",
+                "colormag",
+                "busiprof",
+                "tiny-framework"
+            ]
+        }
+    }
+}

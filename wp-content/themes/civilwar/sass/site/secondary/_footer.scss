@@ -1,0 +1,140 @@
+.footer{
+    padding: 0;
+    z-index: 9999;
+    background-color: #fff;
+    box-shadow: 1px 2px 5px 0.00px rgba(0, 0, 0, 0.75);
+    
+    ul{
+    	list-style-type: none;
+    	padding-left: 0rem;
+    }
+    
+    //fix for icon alignement
+    .the-social-links{
+    	line-height: 2.3;
+		margin-right: 10px;
+		transition: all 0.2s ease 0s
+    }
+    
+    .contact-fix{
+    	padding-top: 18px;
+    }
+}
+
+.social-link-fix{
+	/*margin-top: -0.5rem;*/
+}
+
+.footer-links {
+    height: 100%;
+    padding-bottom: 35px;
+    
+    .fa{
+        color:#7f6954;
+    }
+    
+    h3{
+    	color: #7f6954;
+    	font-style: italic;
+        padding-top: 40px;
+        padding-bottom: 20px;
+        border-bottom: thin solid #eceeef;
+    }
+    
+    h4{
+        color: #7f6954;
+    }
+    
+    .circle-bg{
+        background-color: #7f6954;
+        border-radius: 50%;
+        width:60px;
+        height:60px;
+    }
+    
+    .circle-outline{
+        background-color: #fff;
+        border-radius: 50%;
+        width:60px;
+        height:60px;
+        border: medium solid #7f6954;
+        padding-left: 19px;
+        padding-top: 15px;
+        transition: 0.2s ease;
+    }
+    
+    .circle-outline:hover{
+        background-color: #7f6954;
+        border: medium solid #7f6954;
+        
+        span{
+            color: #fff;
+        }
+        
+    }
+    
+    img{
+        opacity: 1.0;
+        transition: 0.2s ease;
+    }
+    
+    img:hover{
+        opacity: 0.2;
+        transition: 0.2s ease;
+    }
+    
+    .footer-links .fa{
+    	opacity: 1.0;
+        transition: 0.2s ease;
+    }
+    
+    .footer-links .fa:hover{
+        opacity: 0.2;
+        transition: 0.2s ease;
+    }   
+    
+    .fa-rss{
+    	margin-left: 3px;
+    }
+	
+}
+
+
+
+.post-link, .social-link{
+    margin-top: 18px;
+}
+
+.three-posts-fix{
+	margin-right: 10px;
+}
+
+.media-body{
+	padding-bottom: 5px;
+}
+
+/*
+.social-name{
+    padding-top: 10px;
+}
+*/
+
+.fa-twitter:hover{
+    color: #fff;
+}
+
+.footer-bottom{
+    height: 100%;
+    width: 100%;
+    background-color: #7f6954;
+    
+    p{
+        padding: 18px 0;
+        margin-bottom: 0;
+        color: #fff;
+    }
+    
+    .copyright{
+        margin-top: 12px;
+    }
+}

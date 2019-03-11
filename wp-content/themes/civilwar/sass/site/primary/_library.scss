@@ -1,0 +1,173 @@
+/*                                */
+/*         Hero Section           */
+/*                                */
+
+
+.page-hero{
+    height: 600px;
+    //background-image:url(../images/Ernest_Meissonier_Card%20players.jpg);
+    background-position: center;
+    background-size: cover;
+    background: transparent;
+    
+    /*
+    animation: "background-parralax"{
+    0%: center
+    100%: top
+    }
+    */
+    
+    h1{
+    margin-top: 16rem;
+    text-align: center;
+    color: white;
+    }
+}
+
+/*                                */
+/*         Library  Section       */
+/*                                */
+
+.library{
+    
+    padding: 0;
+    box-shadow: 0 0 20px 0 rgba(1, 1, 1, 0.5);
+    
+    @include media-breakpoint-down(sm){
+    	padding-bottom: 2rem;
+	}
+	
+	@include media-breakpoint-up(sm){
+		padding-bottom: 3rem;
+	}
+    
+    #book-list-wrapper{
+
+    color: white;
+    z-index: 999;
+        
+    /*    To fix brown line on larger screens: */
+    
+    @include media-breakpoint-down(md){
+        @include font-size(22px);
+        background-color: #fff;
+        margin-bottom: 2rem;
+    }
+    
+    @include media-breakpoint-up(md){
+        margin-bottom: 1rem;
+    }
+    
+    @include media-breakpoint-down(xs){
+        @include font-size(20px);
+        background-color: #7f6954;
+    }
+    
+        ul{
+
+        border-top: thin solid #fff;
+        padding: 0;
+        list-style-type: none;
+
+                li{
+                    color: white;
+                    padding:5px 0 12px 0;
+                    text-align: center;
+                    margin-top: 30px;
+                    padding-bottom: 5px;
+                }
+            }
+    }
+    
+    
+    h1{
+        color: #fff;
+        text-align: center;
+        /*margin-top: 0.5rem;*/
+        /* 0.5 rem (margin) + 1.2 rem (padding) */
+        padding: 1.7rem 0 1.2rem 0;
+        font-style: underline;
+        margin-bottom: 0rem;
+    }
+    
+    h2{
+        padding: 1rem 0rem;
+    }
+    
+    .book-link{
+        color:white;
+    }
+    
+    .book-link:hover{
+        color: #eceeef;
+    }
+    
+    .book-release-container{
+    text-align: justify;
+    }
+    
+    .book-description{
+        img{
+            margin: 1.75rem 0rem;
+            max-width: 100%;
+            height: auto;
+            box-shadow: 1px 2px 5px 0.00px rgba(0, 0, 0, 0.75);
+        }
+    }
+    
+    .review-container{
+        margin-top: 1rem;
+        
+        h2{
+            border-bottom: thin solid #eceeef;
+            margin-bottom: 2rem;
+        }
+        
+        li{
+            margin: 1rem 0rem;
+        }
+    }
+
+    .media-body{
+        
+        padding-left: 0rem;
+        
+        @include media-breakpoint-up(lg) {
+        padding-left: 0.75rem;
+        }
+        
+        h4{
+            color:#7f6954;
+        }
+        blockquote{
+            color:black;
+        }
+    }
+    
+    .buylink{
+        text-align: center;
+        
+        p{
+            margin: 1.75rem 0rem;
+        }
+    }
+}
+
+.book-header{
+    background-color: #7f6954;
+}
+
+
+
+
+/*         Book Releases          */
+
+.library{
+    box-shadow: 0 0 20px 0 rgba(1, 1, 1, 0.5);
+    
+    h2{
+        text-align: center;
+    }
+}
+
+/*       Audiobook Releases       */
